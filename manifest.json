@@ -1,0 +1,29 @@
+{
+ "name": "習慣循環實驗室",
+ "short_name": "習慣實驗室",
+ "description": "找出習慣背後真正的渴求",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#fcf9ea",
+ "theme_color": "#93c9ec",
+ "lang": "zh-Hant",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
