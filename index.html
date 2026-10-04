@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>習慣循環實驗室</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#93c9ec">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fcf9ea;--card:#fffef9;--ink:#34404f;--mute:#6b7685;--line:#e6e8d8;--acc:#93c9ec;--acc-ink:#12304a;--hit:#86600a;--hit-bg:#fff0b5;--bad:#c9506a;--lav:#9ad8c1;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -323,6 +327,7 @@ function drawOv(){
 function render(){drawHabits();drawOv();drawPre();drawRewChips();drawTabs();drawActive();drawRev();drawPlan()}
 drawBef();render();show(S.run?1:0);
 setInterval(()=>{if(S.run)drawActive()},1000);
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script>
 </body>
 </html>
